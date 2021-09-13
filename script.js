@@ -3,9 +3,11 @@ const price = document.getElementById("price");
 const toggler = document.querySelector(".toggler");
 const checkBox = document.querySelector(".billing__toggler input");
 const pageViews = document.getElementById("page-views");
+const discount = document.querySelector(".discount");
 
 slider.addEventListener("change", setPrice);
 checkBox.addEventListener("change", setBilling);
+window.addEventListener("resize", setDiscount);
 
 function setPrice(e) {
 	let value = +slider.value;
@@ -31,4 +33,18 @@ function setPrice(e) {
 function setBilling(e) {
 	toggler.classList.toggle("year");
 	setPrice();
+}
+
+function setDiscount(e) {
+	if (e.srcElement.innerWidth < 601) {
+		discount.textContent = "-25%";
+	} else {
+		discount.textContent = "25% discount";
+	}
+}
+
+if (window.innerWidth < 601) {
+	discount.textContent = "-25%";
+} else {
+	discount.textContent = "25% discount";
 }

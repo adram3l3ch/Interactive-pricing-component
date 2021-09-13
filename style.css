@@ -241,7 +241,7 @@ a {
 	}
 }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
 	h1 {
 		font-size: 1.5rem;
 	}
@@ -257,7 +257,8 @@ a {
 		display: block;
 	}
 	.card {
-		width: 400px;
+		width: 80%;
+		min-width: 350px;
 		padding: 30px;
 	}
 	.card header {
@@ -273,6 +274,7 @@ a {
 		margin-top: 100px;
 		width: 100%;
 		padding: 0;
+		max-width: 300px;
 	}
 	footer {
 		flex-direction: column;
