@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://github.com/adram3l3ch/Interactive-pricing-component)
--   Live Site URL: [Add live site URL here](https://adramelech-interactive-pricing-component.netlify.app/)
+-   Solution URL: [Github](https://github.com/adram3l3ch/Interactive-pricing-component)
+-   Live Site URL: [Netlify](https://adramelech-interactive-pricing-component.netlify.app/)
 
 ### Built with
 
