@@ -288,3 +288,19 @@ a {
 		margin-bottom: 30px;
 	}
 }
+
+/* ----------------slider thumb for firefox-------------- */
+
+input[type="range"]::-moz-range-thumb {
+	-webkit-appearance: none;
+	border: none;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background: hsl(174, 86%, 45%) url("./images/icon-slider.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: 0 10px 30px hsla(174, 86%, 45%, 0.678);
+	cursor: grab;
+	margin-top: 0px;
+}
