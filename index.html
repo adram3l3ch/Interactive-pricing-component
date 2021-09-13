@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Interactive pricing component</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<header>
+			<img src="./images/pattern-circles.svg" alt="" />
+			<h1>Simple, traffic-based pricing</h1>
+			<p>
+				Sign-up for our 30-day trial. <br />
+				No credit card required.
+			</p>
+		</header>
+		<main class="card">
+			<header>
+				<h3 id="page-views">100K PAGEVIEWS</h3>
+				<h2 id="price">$16.00 <span>/month</span></h2>
+			</header>
+			<input type="range" min="0" max="4" id="slider" value="2" />
+			<div class="billing">
+				<p>Monthly Billing</p>
+				<div class="billing__toggler">
+					<input type="checkbox" id="checkbox" />
+					<label for="checkbox"><div class="toggler"></div></label>
+				</div>
+				<p>Yearly Billing</p>
+				<div class="discount">25% discount</div>
+			</div>
+			<footer>
+				<div class="line"></div>
+				<div class="footer__left">
+					<div class="footer__left__avails">
+						<img src="./images/icon-check.svg" alt="" />
+						<p>Unlimited websites</p>
+					</div>
+					<div class="footer__left__avails">
+						<img src="./images/icon-check.svg" alt="" />
+						<p>100% data ownership</p>
+					</div>
+					<div class="footer__left__avails">
+						<img src="./images/icon-check.svg" alt="" />
+						<p>Email reports</p>
+					</div>
+				</div>
+				<div class="footer__right">
+					<button>Start my trial</button>
+				</div>
+			</footer>
+		</main>
+		<div class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="https://github.com/adram3l3ch">Adarsh</a>.
+		</div>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
